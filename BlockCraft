@@ -1,0 +1,26 @@
+# BlockCraft.py
+
+class BlockCraft:
+    def __init__(self, platform_name, crafting_features):
+        self.platform_name = platform_name
+        self.crafting_features = crafting_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Crafting Features:")
+        for feature in self.crafting_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "BlockCraft"
+    crafting_features = [
+        "Smart contract development",
+        "Blockchain deployment tools",
+        "Token creation wizard",
+        "Decentralized application (dApp) development",
+        "Blockchain integration SDKs"
+    ]
+    
+    block_craft = BlockCraft(platform_name, crafting_features)
+    block_craft.display_platform_info()
